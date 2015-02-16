@@ -5,3 +5,6 @@
 \#*#
 # OS X index files
 .DS_Store
+
+#compiled python files
+*.pyc

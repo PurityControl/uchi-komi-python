@@ -1,0 +1,9 @@
+#+TITLE: Notes for first iteration of Even Fibs
+
+used loop running in inner function to generate the fibs. Then used list
+comprehension to reduce the list and sum it.
+
+- could improve efficiency by only adding to list if even (question: will
+  it be that much more efficient?)
+- would like to see a solutions using pythons iterators and generator
+

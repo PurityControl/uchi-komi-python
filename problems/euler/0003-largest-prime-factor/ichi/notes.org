@@ -1,0 +1,7 @@
+#+TITLE: Notes for first iteration of Largest Prime Factor
+
+Idea is to create a generator that creates prime numbers.
+Then use the generator to create a list of prime factors.
+Then select the largest number from the list of prime factors.
+
+

@@ -1,9 +1,24 @@
 def get(factor):
-    return max(x for x in up_to(factor, primes()) if factor_p(factor,x))
+    factors = [1]
+    while factors_product(factors) < factor:
+        factors.append(
+          lowest_prime_factor(factor/factors_product(factors)))
+    return max(factors)
+
+
+def factors_product(seq):
+    return reduce(lambda x, y: x*y, seq)
+
+
+def lowest_prime_factor(factor):
+    for prime in primes():
+        if factor_p(factor, prime):
+            return prime
 
 
 def factor_p(factor, divisor):
     return factor % divisor == 0
+
 
 def get_kval_primes(k_val, primes):
     #filter primes only from 1+kval and 1-kval

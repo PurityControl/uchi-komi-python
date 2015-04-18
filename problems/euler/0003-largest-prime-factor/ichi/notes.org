@@ -4,4 +4,31 @@ Idea is to create a generator that creates prime numbers.
 Then use the generator to create a list of prime factors.
 Then select the largest number from the list of prime factors.
 
+** Retrospective
+
+Implementation went pretty much according to plan. The only
+deviation was calculating all the prime factors for the large
+number was unperformant. Therefore every time a factor was
+found this was divided into the large number to create a
+smaller number and the next prime factor found on the
+smaller number. This speeded up the solution from giving up
+before execution to giving a result in under 100ms.
+
+How to deal with division by 0 errors wasn't clear cut when
+calculating the next number to work out the smalles prime
+factor for. I settled for returning 1 of the product of an
+empty list. I became more comfortable with this over time
+but if this was deemed misleading then this could be moved
+into reduced_dividend now this has been extracted out into
+a function.
+
+Python generator are elegant. Similar to creating methods
+in ruby that can take a block. When combined with iterating
+through the generator using a "for / in" statement, there
+isn't much differenc between the two.
+
+Documentation generation is easy and convenient.
+
+the use of _ instead of declaring private seems awkward.
+restrictions on valid method names is extremely annoying.
 

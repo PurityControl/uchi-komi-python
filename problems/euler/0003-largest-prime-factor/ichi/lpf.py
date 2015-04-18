@@ -1,4 +1,4 @@
-def get(dividend):
+def largest_prime_factor(dividend):
     """ given a dividend, finds all the prime factors for it
     and returns the largest of the prime factors
 

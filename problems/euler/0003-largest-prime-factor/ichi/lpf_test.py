@@ -2,14 +2,14 @@
 
 import unittest
 
-import largest_prime_factor
+import lpf
 
 class LargestPrimeFactorTests(unittest.TestCase):
 
     def test_even_fibs_to_4000000(self):
         self.assertEqual(
             6857,
-            largest_prime_factor.get(600851475143)
+            lpf.largest_prime_factor(600851475143)
         )
 
 if __name__ == '__main__':

@@ -1,13 +1,28 @@
-def get(factor):
-    factors = [1]
-    while factors_product(factors) < factor:
+def get(dividend):
+    """ given a dividend, finds all the prime factors for it
+    and returns the largest of the prime factors
+
+    args:
+      dividend: the number you want to calculate the largest
+      prime factor for
+    """
+    factors = []
+    while product_of_factors(factors) < dividend:
         factors.append(
-          lowest_prime_factor(factor/factors_product(factors)))
+          lowest_prime_factor(reduced_dividend(dividend, factors)))
     return max(factors)
 
 
-def factors_product(seq):
-    return reduce(lambda x, y: x*y, seq)
+def reduced_dividend(dividend, factors):
+    """The new dividend as a result of dividing the original
+    dividend by the list of prime factors calculated so far."""
+    return dividend/product_of_factors(factors)
+
+
+def product_of_factors(seq):
+    """return the product of numbers in the list or 1 for the
+    empty list to prevent division by zero errors"""
+    return reduce(lambda x, y: x*y, seq, 1)
 
 
 def lowest_prime_factor(factor):

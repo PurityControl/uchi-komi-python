@@ -1,0 +1,9 @@
+#+TITLE: Notes for first iteration of Largest Palindrome Product
+
+create generator comprehension that generates all palindrome
+products for the products of the range then take the max
+
+** Retrospective
+
+generator comprehension made this very easy
+

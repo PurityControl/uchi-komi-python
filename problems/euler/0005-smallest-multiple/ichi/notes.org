@@ -1,0 +1,8 @@
+#+TITLE: Notes for first iteration of Smallest Multiple
+
+create generator comprehension that generates an inifinite list
+of multiples of the largest factor. Return the first result that
+allows all the positive integes to the largest factor to be factors.
+
+** Retrospective
+

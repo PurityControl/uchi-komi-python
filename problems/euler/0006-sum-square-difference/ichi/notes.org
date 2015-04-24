@@ -1,0 +1,7 @@
+#+TITLE: Notes for first iteration of Sum Square Difference
+
+take the difference of two list comprehensions summed
+
+** Retrospective
+
+keep forgetting return find having to put it in frustrating

@@ -1,0 +1,10 @@
+#+TITLE: Notes for first iteration of 1001st Prime Number
+
+Use the generator from largest prime factor to create a list of prime factors.
+take the required number as a list and return the last one
+
+** Retrospective
+no where near as quick as a language with a native prime library
+but satisfactory with a hand rolled solution centered around k-vals
+
+

@@ -5,5 +5,7 @@ returns successive adjacent lists of integers on list length
 
 ** Retrospective
 
-
-
+The first solution used a loop to calculate the max and I felt python
+"pushed" me in that direction.
+After browsing through my ruby implementation and seeing a solution using
+map I realised there was a more eloquent way.

@@ -1,0 +1,11 @@
+#+TITLE: Notes for first iteration of largest product in series
+
+Create a generator succesive_seqs that takes a length and string and
+returns successive adjacent lists of integers on list length
+
+** Retrospective
+
+The first solution used a loop to calculate the max and I felt python
+"pushed" me in that direction.
+After browsing through my ruby implementation and seeing a solution using
+map I realised there was a more eloquent way.

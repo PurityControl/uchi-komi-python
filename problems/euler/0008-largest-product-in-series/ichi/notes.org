@@ -1,0 +1,9 @@
+#+TITLE: Notes for first iteration of largest product in series
+
+Create a generator succesive_seqs that takes a length and string and
+returns successive adjacent lists of integers on list length
+
+** Retrospective
+
+
+

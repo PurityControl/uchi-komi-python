@@ -1,0 +1,20 @@
+#+TITLE: Notes for first iteration of largest product in series
+
+create a generator that returns pythagorean triplets totalling a
+certain amount then get the first and calculate the product
+
+** Retrospective
+
+Getting to the solution highlighted a number of differences between
+python 2 and 3
+
+In python 2 range would create a list of sequences putting the whole
+list into memory, to do this lazily you used xrange. In python 3 range
+does what xrange did and xrange has been removed.
+
+In python 2 you got then next sequence of an iterator / generator by calling
+.next() on the iterator. In Python 3 this is implemented as __next__, but you
+should use next(iterator) not iterator.__next__().
+
+ie. Python2 what iter.next(), Python 3 is next(iter)
+

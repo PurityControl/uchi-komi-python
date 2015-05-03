@@ -1,0 +1,15 @@
+#+TITLE: Notes for first iteration of summation of primes
+
+use previous hand baked prime generator and collect values up to limit the sum
+
+** Retrospective
+
+Unsatisfactory implementation of solution. Generating primes from kvals and checking
+if prime by seeing if any prior primes are prime factors becomes very slow at
+higher numbers.
+
+This need to be reimplemented trying a seiving algorithm as the upper limit is
+known and so python can lazily create a list up to that limit to form the basis
+of the seive.
+
+

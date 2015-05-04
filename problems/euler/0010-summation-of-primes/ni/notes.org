@@ -1,0 +1,24 @@
+#+TITLE: Notes for second iteration of summation of primes
+
+try to reimplement using a simple seiving algorithm (sieve of eratosthenes)
+
+** Retrospective
+
+My initial attempt also proved to be very poor in terms of performance.
+I was creating a range, collecting primes and removing items from the array
+as I seived.
+I decided to read some discussion on the euler solutions and discovered an
+elegant idea that lead to this very performant solution.
+I create an array to hold all primes and initialise each item in the array
+to a place holder value (None).
+Then I traverse the seive marking primes with their values and elements
+that have been seived with a zero value.
+As a further optimisation I take the index of the last prime calculated
+and start the next iteration from that index to prevent any unnecessary
+checking or traversal of the array and this speeds up things considerably.
+Returning the primes is then just a matter of filtering out zero values
+in the array.
+Marking an array rather that continually modifying one makes a vast
+difference to performance
+
+ 

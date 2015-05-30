@@ -1,0 +1,10 @@
+#+TITLE: Notes for first iteration of Largest product in grid
+
+Create standard 2 dimensional array and iterate over it
+collecting values where they exist.
+Then get the largest product.
+
+** Retrospective
+
+use python generator to yield all sequences.
+implementation straight forward

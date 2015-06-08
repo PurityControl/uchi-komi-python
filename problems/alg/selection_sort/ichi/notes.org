@@ -1,0 +1,6 @@
+#+TITLE: Notes for Selection sort
+
+First implementation to be simple implementation using standard looping
+constructs.
+
+
